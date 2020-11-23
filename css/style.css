@@ -153,16 +153,13 @@ body {
   width: 617px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 382px;
 }
 
 .info-obra p {
   width: 604px;
-  text-align: justify;
-  margin: 0 0 0 35px;
+  margin: 0 0 0 40px;
+  overflow: scroll;
+  height: 382px;
 }
-
-
-
-

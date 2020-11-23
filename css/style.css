@@ -1,5 +1,11 @@
 * {
-  font-family: 'Roboto';
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
 }
 
 .container {
@@ -27,6 +33,7 @@
 .info {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .info .img-info {
@@ -79,6 +86,83 @@
     top: 185px;
     font-size: 25px;
 }
+
+.link-texto-curatorial {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -10px);
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+
+.textos-info {
+  position: absolute;
+  top: 50%;
+  right: -116px;
+  transform: translate(0, -50%);
+}
+
+.textos-info h1 {
+  margin: 0;
+}
+
+.textos-info h3 {
+  margin: 0;
+  text-align: center;
+}
+
+
+.titulo-info {
+  position: relative;
+  width: fit-content;
+  margin-top: 36px;
+}
+
+.container-detalle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.boton-volver-detalle {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 158px;
+  height: 56px;
+  margin-right: 76px;
+  align-self: flex-end;
+  margin-top: 50px;
+  font-size: 24px;
+  border-radius: 28px;
+  background: #C4C4C4;
+  border: none;
+}
+
+.info-obra {
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
+
+.info-obra .imagen {
+  background-image: url(assets/xiomara/img1.png);
+  width: 617px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 382px;
+}
+
+.info-obra p {
+  width: 604px;
+  text-align: justify;
+  margin: 0 0 0 35px;
+}
+
+
 
 
 

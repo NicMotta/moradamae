@@ -1,5 +1,6 @@
 const INFO_MAES = [
   {
+    right: true,
     id: 0,
     nombre: `XIOMARA ZAPATA`,
     imagen: ``, 
@@ -21,6 +22,7 @@ const INFO_MAES = [
             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
   },
   {
+    right: true,
     id: 1,
     nombre: 'JUAN MICELI',
     imagen: '',
@@ -42,6 +44,7 @@ const INFO_MAES = [
     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
   },
   {
+    right: true,
     id: 2,
     nombre: 'JOHN MELO',
     imagen: '',
@@ -63,6 +66,7 @@ const INFO_MAES = [
     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
   },
   {
+    right: true,
     id: 3,
     nombre: 'AMAWTA RELMU',
     imagen: '',
@@ -84,6 +88,7 @@ const INFO_MAES = [
     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
   },
   {
+    right: true,
     id: 4,
     nombre: 'NIC MOTTA',
     imagen: '',
@@ -105,6 +110,7 @@ const INFO_MAES = [
     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
   },
   {
+    right: false,
     id: 5,
     nombre: `MARIELA FARINA`,
     imagen: ``, 
@@ -126,6 +132,7 @@ const INFO_MAES = [
             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
   },
   {
+    right: false,
     id: 6,
     nombre: 'CARMEN TORRERI',
     imagen: '',
@@ -147,6 +154,7 @@ const INFO_MAES = [
     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
   },
   {
+    right: false,
     id: 7,
     nombre: 'MARTIN PARDO',
     imagen: '',
@@ -168,6 +176,7 @@ const INFO_MAES = [
             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
   },
   {
+    right: false,
     id: 8,
     nombre: 'PABLO LOGIOVINE',
     imagen: '',
@@ -189,6 +198,7 @@ const INFO_MAES = [
     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
   },
   {
+    right: false,
     id: 9,
     nombre: 'OSCAR YAUQUEN',
     imagen: '',
@@ -210,6 +220,7 @@ const INFO_MAES = [
     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
   },
   {
+    right: false,
     id: 10,
     nombre: `PABLO CAVALLO`,
     imagen: ``, 
@@ -231,6 +242,7 @@ const INFO_MAES = [
             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
   },
   {
+    right: false,
     id: 11,
     nombre: 'JUAN MARCELO',
     imagen: '',
@@ -252,6 +264,7 @@ const INFO_MAES = [
     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
   },
   {
+    right: false,
     id: 12,
     nombre: 'GUILLERMO MIOTTI',
     imagen: '',
@@ -273,6 +286,7 @@ const INFO_MAES = [
     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
   },
   {
+    right: false,
     id: 13,
     nombre: 'MANUEL VELASQUEZ',
     imagen: '',
@@ -294,6 +308,7 @@ const INFO_MAES = [
     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
   },
   {
+    right: true,
     id: 14,
     nombre: 'AUSEL MUÑOS',
     imagen: '',
@@ -315,6 +330,7 @@ const INFO_MAES = [
     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
   },
   {
+    right: true,
     id: 15,
     nombre: `FRANCCESCA CANTORE`,
     imagen: ``, 
@@ -336,6 +352,7 @@ const INFO_MAES = [
             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
   },
   {
+    right: true,
     id: 16,
     nombre: 'MILAGROS ARIAS Y SARA SANTACRUZ',
     imagen: '',
@@ -357,6 +374,7 @@ const INFO_MAES = [
     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
   },
   {
+    right: true,
     id: 17,
     nombre: 'MATIAS AVALOS',
     imagen: '',
@@ -450,7 +468,7 @@ function renderContainer(element) {
       elementInfo = element;
     }
     index_html = `
-      <div class='container-detalle'>
+      <div class='container-detalle ${element.right ? "" : "left"}'>
         <button class="boton-volver-detalle" onclick='volver()'>volver</button>
         <div class="titulo-info">
           <img src="./assets/pista_der.png" />

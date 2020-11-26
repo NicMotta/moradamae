@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .container .img-fondo {
@@ -42,7 +43,7 @@ body {
   height: 453px;
   top: 50%;
   transform: translate(0, -50%);
-  width: fit-content;
+  width: 100%;
 }
 
 .izquierda-afuera {
@@ -82,11 +83,9 @@ body {
 
 .izquierda .info p {
   text-align: right;
-  width: 100%;
 }
 
 .izquierda-afuera .info p {
-  width: 100%;
   text-align: right;
 }
 

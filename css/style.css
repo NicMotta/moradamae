@@ -71,6 +71,7 @@ body {
 .info p {
   font-size: 18px;
   margin: 0;
+  z-index: 5;
 }
 
 .info:first-child {
@@ -146,9 +147,8 @@ body {
 .textos-info {
   position: absolute;
   top: 50%;
-  left: 80%;
+  left: 40%;
   transform: translate(0, -50%);
-  width: fit-content;
 }
 
 .textos-info h1 {
@@ -163,7 +163,6 @@ body {
 
 .titulo-info {
   position: relative;
-  width: fit-content;
   margin-top: 36px;
 }
 

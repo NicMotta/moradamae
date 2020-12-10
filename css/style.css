@@ -145,10 +145,7 @@ body {
 }
 
 .textos-info {
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translate(0, -50%);
+  margin-left: 36px;
 }
 
 .textos-info h1 {
@@ -162,7 +159,8 @@ body {
 
 
 .titulo-info {
-  position: relative;
+  display: flex;
+  align-items: flex-end;
   margin-top: 36px;
 }
 
@@ -190,27 +188,129 @@ body {
 .info-obra {
   display: flex;
   justify-content: center;
-  margin-top: 34px;
+  margin-top: 84px;
+  padding: 0 20px;
 }
 
 .info-obra .imagen {
   background-image: url(assets/xiomara/img1.png);
-  width: 617px;
+  max-width: 617px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 382px;
+  width: 100%;
 }
 
 .info-obra p {
-  width: 604px;
+  max-width: 604px;
   margin: 0 0 0 40px;
   overflow: scroll;
   height: 382px;
+  width: 100%;
 }
 
 .imagen-fondo {
   position: absolute;
   top: -20px;
   left: -5px;
+}
+
+.imagen-mobile {
+  display: none;
+}
+
+.img-fondo-mobile {
+  display: none;
+}
+
+@media(max-width: 610px) {
+
+  .info-container-mobile p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+
+  .info-container-mobile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+
+  .title-info {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .img-fondo-mobile {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .container .img-fondo {
+    display: none;
+  }
+
+  .textos-info h3 {
+    font-size: 12px;
+    text-align: start;
+    margin-left: 10px;
+  }
+
+  .textos-info h1 {
+    font-size: 20px;
+    margin-top: 18px;
+    margin-left: 10px;
+  }
+
+  .textos-info {
+    margin: 0;
+  }
+
+  .titulo-info {
+    align-items: flex-start;
+    margin-top: 5px;
+    margin-bottom: 36px;
+  }
+
+  .boton-volver-detalle {
+    margin: 5px 5px 0 0;
+    width: 100px;
+    height: 35px;
+    font-size: 11px;
+  }
+
+  .imagen-mobile {
+    display: block;
+  }
+
+  .imagen-desktop {
+    display: none;
+  }
+
+  .info-obra .imagen {
+    background-image: url();
+    background-color: #c4c4c4;
+    height: 204px;
+  }
+
+  .info-obra p {
+    margin: 0 0 40px 0;
+    font-size: 12px;
+    height: 250px;
+  }
+
+  .info-obra {
+    flex-direction: column-reverse;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-device-width: 611px) and (max-device-width: 1024px) and (orientation:portrait) {
+  .imagen-desktop {
+    width: 50%;
+  }
 }

@@ -407,7 +407,7 @@ function renderContainer(element) {
     index_html = `
       <div class="container">
         <h1>MORADA MAE</h1>
-        <p>MAESTRÍA EN ARTES ELECTRÓNICAS / UNTREF</p>
+        <p class="title-info">MAESTRÍA EN ARTES ELECTRÓNICAS / UNTREF</p>
         <p>cohorte 2020</p>
         <div class="img-fondo">
           <img class="imagen-fondo" src="./assets/imagenes.png" />
@@ -458,6 +458,20 @@ function renderContainer(element) {
           </div>
           <a href="./texto_curatorial.html" class="link-texto-curatorial">TEXTO CURATORIAL</a>
         </div>
+        <div class="img-fondo-mobile">
+          <div id="container-info" >
+          ${
+            INFO_MAES.map(item => {
+              return`
+                <div onclick="redirect('${item.id}')" class="info-container-mobile">
+                  <img src="${item.id % 2 ? "./assets/pista_larga.png" : "./assets/pista_corta.png"}"/>
+                  <p>${item.nombre}</p>
+                </div>
+              `
+            }).join('')
+          }
+          </div>
+        </div>
       </div>
     `;
   } else {
@@ -471,7 +485,8 @@ function renderContainer(element) {
       <div class='container-detalle ${element.right ? "" : "left"}'>
         <button class="boton-volver-detalle" onclick='volver()'>volver</button>
         <div class="titulo-info">
-          <img src="./assets/pista_der.png" />
+          <img class="imagen-desktop" src="./assets/imagen_pista_der.png" />
+          <img class="imagen-mobile" src="./assets/pista.png" />
           <div class="textos-info">
             <h1>${elementInfo.nombre}</h1>
             <h3>${elementInfo.titulo}</h3>

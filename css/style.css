@@ -226,6 +226,17 @@ body {
 
 @media(max-width: 610px) {
 
+  .texto_curatorial {
+    width: 100%;
+    left: 0;
+    position: relative;
+    font-size: 12px;
+  }
+
+  .texto_curatorial p {
+    margin: 10px 20px;
+  }
+
   .info-container-mobile p {
     margin-top: 10px;
     margin-bottom: 0;
@@ -246,7 +257,7 @@ body {
   .img-fondo-mobile {
     display: block;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 15px;
   }
 
   .container .img-fondo {
@@ -306,6 +317,23 @@ body {
     flex-direction: column-reverse;
     margin-top: 0;
     margin-bottom: 30px;
+  }
+
+  .container-boton-texto {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 36px;
+  }
+
+  .container-boton-texto a {
+    margin: 15px 0;
+    padding: 9px 17px;
+    border-radius: 30px;
+    font-size: 12px;
+    background-color: #c4c4c4;
+    text-decoration: none;
+    color: black;
   }
 }
 

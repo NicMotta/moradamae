@@ -4,7 +4,7 @@ const INFO_MAES = [
     id: 0,
     nombre: `XIOMARA ZAPATA`,
     imagen: ``, 
-    video: `video`,
+    video: "https://www.youtube.com/embed/tgbNymZ7vqY",
     titulo: `Titulo de la obra Xio`,
     texto: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -482,8 +482,10 @@ function renderContainer(element) {
     let elementInfo =  '';
     if(Array.isArray(element) && infoLocal) {
       elementInfo =  JSON.parse(infoLocal);
+      console.log(elementInfo);
     } else {
       elementInfo = element;
+      console.log(elementInfo.video);
     }
     index_html = `
       <div class='container-detalle ${element.right ? "" : "left"}'>
@@ -497,7 +499,8 @@ function renderContainer(element) {
           </div>
         </div>
         <div class="info-obra">
-          <div class="imagen" style="background-image:url(${elementInfo.imagen}); background-color: #c4c4c4;"></div>
+          <iframe class="imagen" src=${elementInfo.video}> </iframe>
+          <div  style="background-image:url(${elementInfo.imagen}); background-color: #c4c4c4;"></div>
           <p>${elementInfo.texto}</p>
         </div>
       </div>
